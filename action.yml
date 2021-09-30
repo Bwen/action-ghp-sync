@@ -1,11 +1,11 @@
-name: "Github Pages Sync"
-description: "Github Action to update Github Pages, allows users to provide their own build script"
+name: "GitHub Pages Sync"
+description: "GitHub Action to update GitHub Pages, allows users to provide their own build script"
 branding:
   icon: 'cloud-lightning'
   color: 'green'
 inputs:
   source_dir:
-    description: 'The relative path where the source for Github Pages is or will be after build_script'
+    description: 'The relative path where the source for GitHub Pages is or will be after build_script'
     required: true
   build_script:
     description: 'The relative path to a custom build script within your repository'
