@@ -6,7 +6,7 @@ This GitHub Action **will delete everything** in the branch `gh-pages`, and upda
 
 ### Example Usage
 ```yaml
-  - uses: Bwne/action-ghp-sync@v1-beta
+  - uses: Bwen/action-ghp-sync@v1-beta
     with:
       source_dir: project-site/dist
       build_script: bin/gh-pages-build
