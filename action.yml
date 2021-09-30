@@ -1,0 +1,17 @@
+name: "Github Pages Sync"
+description: "Github Action to update Github Pages, allows users to provide their own build script"
+branding:
+  icon: 'cloud-lightning'
+  color: 'green'
+inputs:
+  source_dir:
+    description: 'The relative path where the source for Github Pages is or will be after build_script'
+    required: true
+  build_script:
+    description: 'The relative path to a custom build script within your repository'
+    required: false
+runs:
+  using: "composite"
+  steps:
+    - shell: bash
+      run: ${{ github.action_path }}/gh-pages-sync '${{ inputs.source_dir }}' '${{ inputs.build_script }}'
